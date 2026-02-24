@@ -1,49 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bharath Ganesh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<section class="hero">
-    <h1>Bharath Ganesh</h1>
-    <p>Backend-focused developer building practical systems</p>
+<header>
+    <nav>
+        <h2 class="logo">Bharath</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>Hi, I'm Bharath</h1>
+            <h2>Java Developer & Problem Solver</h2>
+
+            <p>
+                I specialize in building efficient logic-driven solutions using Java,
+                Data Structures and SQL.
+            </p>
+
+            <p>
+                My focus is not just writing code, but solving problems using structured thinking
+                and optimized algorithms.
+            </p>
+
+            <button onclick="scrollToSection('projects')">
+                View My Work
+            </button>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-box">
+                <h3>20+</h3>
+                <span>DSA Problems</span>
+            </div>
+
+            <div class="stat-box">
+                <h3>3+</h3>
+                <span>Projects</span>
+            </div>
+
+            <div class="stat-box">
+                <h3>Java</h3>
+                <span>Primary Stack</span>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<section class="about">
-    <h2>About</h2>
-    <p>
-        I build systems that solve real problems.
-        My focus is on backend logic and workflow-driven platforms.
-    </p>
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I focus on solving real-world problems using structured thinking and optimized logic.</p>
 </section>
 
-<section class="projects">
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+        <div class="card">Java</div>
+        <div class="card">DSA</div>
+        <div class="card">SQL</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
     <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Resume Builder</h3>
+            <p>Dynamic resume generation system.</p>
+        </div>
 
-    <div class="card">
-        <h3>Farmer Marketplace</h3>
-        <p>Connects farmers directly with buyers for transparent trade.</p>
+        <div class="project-card">
+            <h3>Emergency Portal</h3>
+            <p>Real-time emergency reporting platform.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Maze Solver</h3>
+            <p>Backtracking algorithm implementation.</p>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Resume Builder</h3>
-        <p>Converts user details into structured resumes instantly.</p>
-    </div>
-
-    <div class="card">
-        <h3>Audio Transcription</h3>
-        <p>Transforms speech into text with automatic summarization.</p>
-    </div>
-
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: bharathganesh9842@gmail.com</p>
+    <p>Email: yourmail@email.com</p>
 </section>
 
+<footer>
+    <p>© 2026 Bharath</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
